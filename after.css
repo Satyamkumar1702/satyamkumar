@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url(image/after_image.jpg);
+    background-size: cover;
+}
+
+.result{
+    text-align: center;
+    display: inline-block;
+    margin: 150px 50px 200px 550px;
+}
+

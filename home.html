@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Parkinson's Detection</title>
+  <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='home.css') }}"
+    >
+    <link rel="stylesheet" href="/static/css/home.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ 
+ <!-- connected -->
+  <link rel="stylesheet" href="home.css">
+  
+</head>
+
+<body >
+ 
+   <!-- header starts  -->
+   <div class="header">
+
+    <!--Content before waves-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"> <b>Parkinson detection</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="home.html"> <b> Home</b></a>
+            <a class="nav-link" href="Web.html"> <b> Parkinsons detection</b></a>
+            <!-- <a class="nav-link" href="#"><b>Details</b></a> -->
+            <a class="nav-link" id="about" href="#ftr"><b>About</b></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="inner-header flex">
+    <!--Just the logo.. Don't mind this-->
+    <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
+    <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+    
+    </svg>
+    <h1 class="imp" style="font-size:80px" >Parkinsons Detection</h1>
+    </div>
+    
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+        <div class="upper-main">
+           
+            <div class="box">
+
+              <a href="{{ url_for('home') }}" class="btnn btn-secondary   btn-lg button-2" role="button" >Check Parkinson's
+              </a>
+              
+            </div>
+          </div>
+<!-- writting content or details after wavy animation-->
+       <div class="wrapper">
+        <div class="text-box"></div>
+        <img src="image/parinson disease.png" alt="parkinsons disease">
+        <h2 style="text-align: center;">About Parkinson's</h2>
+        <p style="text-align: justify;">Parkinson’s disease is a brain disorder that causes unintended or uncontrollable
+          movements, such as shaking, stiffness, and difficulty with balance and coordination.
+          Symptoms usually begin gradually and worsen over time. As the disease progresses,
+          people may have difficulty walking and talking. They may also have mental and behavioral
+          changes, sleep problems, depression, memory difficulties, and fatigue.</p>
+       </div>
+
+       <div class="wrapper">
+        <div class="text-box"></div>
+        <img src="https://www.verywellhealth.com/thmb/k_If-kT-9bBA4Ze60RJu3uUNjto=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/parkinsonism-causes-symptoms-and-treatment-5189631_final-01-06edf39f8a2a42f59d40151e8dd405b4.jpg" alt="parkinsons disease">
+        <h2 style="text-align: center;">Symptoms of Parkinson's disease</h2>
+        <p style="text-align: justify;"> <b>Parkinson’s has four main symptoms:</b>
+          <ul>
+            <li>Tremor in hands, arms, legs, jaw, or head</li>
+            <li>Muscle stiffness, where muscle remains contracted for a long time</li>
+            <li>Slowness of movement</li>
+            <li>Impaired balance and coordination, sometimes leading to falls</li>
+          </ul>
+        </p>
+       </div>
+       <div class="wrapper">
+        <div class="text-box"></div>
+        <img src="https://static.ibdrelief.com/uploads/files/adobestock_138698385_gallery_image_814_163.jpeg" alt="parkinsons disease">
+        <h2 style="text-align: center;">Treatments for Parkinson’s disease</h2>
+        <p style="text-align: justify;">
+          <ul> <p>Medicines can help treat the symptoms of Parkinson’s by:</p>
+            <li>Increasing the level of dopamine in the brain. Increasing the level of dopamine in the brain.</li>
+            <li>Enzyme inhibitors (e.g., MAO-B inhibitors, COMT inhibitors) to increase the amount of dopamine by slowing down the enzymes that break down dopamine in the brain.</li>
+            <li>Amantadine to help reduce involuntary movements.</li>
+            <li>Anticholinergic drugs to reduce tremors and muscle rigidity.</li>
+          </ul>
+        </p>
+       </div>
+       <div class="wrapper">
+        <div class="text-box"></div>
+        <img src="https://www.nia.nih.gov/sites/default/files/inline-images/NIA_Brain_Medical_Graphic_for_Parkinsons_Disease_102721_500px-02.png" alt="parkinsons disease">
+        <h2 style="text-align: center;">Causes of Parkinson's</h2>
+        <p style="text-align: justify;"> The cause of Parkinson's disease is unknown, but several factors appear to play a role, including
+        <ul>
+          <li> <b>Genes:</b> Researchers have identified specific genetic changes that can cause Parkinson's disease. </li>
+          <li><b>Environmental triggers:</b>Exposure to certain toxins or environmental factors may increase the risk of later Parkinson's disease, but the risk is small.</li>
+          <li><b>The presence of Lewy bodies:</b>Clumps of specific substances within brain cells are microscopic markers of Parkinson's disease. These are called Lewy bodies.</li>
+          <li><b>Alpha-synuclein found within Lewy bodies:</b>Although many substances are found within Lewy bodies, scientists believe that an important one is the natural and widespread protein called alpha-synuclein, also called a-synuclein.</li>
+        </ul>
+        </p>
+       </div>
+       <div class="wrapper">
+        <div class="text-box"></div>
+        <img src="https://th.bing.com/th?id=OCII.1114540BE40FE9C3AD14627CB4E49DF8012DABED6954F0A93B7DE18A591C11B5&w=1606&p=0" alt="parkinsons disease">
+        <h2 style="text-align: center;">Complications of Parkinson's</h2>
+        <p style="text-align: justify;">Parkinson's disease is often accompanied by these additional problems, which may be treatable:
+        <ul>
+          <li> Thinking difficulties</li>
+          <li>Depression and emotional changes</li>
+          <li>Swallowing problems</li>
+          <li>Chewing and eating problems</li>
+          <li>Sleep problems and sleep disorders</li>
+          <li>Bladder problems</li>
+        </ul>
+      </p>
+       </div>
+    </div>
+          
+     
+     <!-- Footer starts -->
+     <div id="ftr">
+     <div class="container1" >
+
+      <footer class="bg-dark text-center text-white" >
+      <!-- Grid container -->
+      <div class="container p-5 pb-8" >
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button" target="_blank"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://in.linkedin.com/" role="button" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/" role="button" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white" href="home.html">Parkinson.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+      
+    </div> 
+  </div>
+    <!-- footer ends -->
+
+</body>
+
+</html>
